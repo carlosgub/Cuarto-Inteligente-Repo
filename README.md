@@ -10,8 +10,8 @@ Se uso el Relay para que funcione como un interruptor de la electicidad.
 
 # Branch
 
-El branch master solo tiene una aplicacion base para el celular usando la arquitectura MVP.
-El branch things es la misma aplicacion movil, ya que el kit viene con una pantalla y se puede mostrar la aplicacion en esta pantalla, pero ademas tiene la logica para que relay prenda y apague el relay.
+* El branch master solo tiene una aplicacion base para el celular usando la arquitectura MVP.
+* El branch things es la misma aplicacion movil, ya que el kit viene con una pantalla y se puede mostrar la aplicacion en esta pantalla, pero ademas tiene la logica para que relay prenda y apague el relay.
 
 ## Kotlin
 ---
