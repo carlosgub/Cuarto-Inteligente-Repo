@@ -1,2 +1,2 @@
 Cuarto Inteligente Repo
-<img alt="YAP" src="https://imgur.com/a/RrsEN32.gif">
+[Imgur](https://i.imgur.com/oide4Uj.gifv)
