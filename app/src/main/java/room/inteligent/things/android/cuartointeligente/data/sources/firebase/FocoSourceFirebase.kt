@@ -18,6 +18,11 @@ class FocoSourceFirebase @Inject constructor(private val firebaseDatabase: Fireb
         return RxFirebaseDatabase.observableSingleValueEvent(ref)
     }
 
+    fun estadosListener() : Observable<DataSnapshot> {
+        val ref = firebaseDatabase.reference
+        return ref.dataChanges()
+    }
+
     fun CambiarEstado(child: String,estado:Boolean)  {
         firebaseDatabase.reference.child(child).setValue(estado)
     }

@@ -3,6 +3,8 @@ package room.inteligent.things.android.cuartointeligente.presentation.views
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import com.google.android.things.pio.Gpio
+import com.google.android.things.pio.PeripheralManager
 import kotlinx.android.synthetic.main.activity_main.*
 import room.inteligent.things.android.cuartointeligente.R
 import room.inteligent.things.android.cuartointeligente.presentation.BaseActivity
@@ -14,20 +16,21 @@ class MainActivity : BaseActivity() ,MainPresenter.View{
 
 
     @Inject lateinit var mPresenter: MainPresenter
-
+    private lateinit var relay:Gpio
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mPresenter.context(this)
         mPresenter.obtenerEstado()
+        mPresenter.inicializarPerifericos()
 
-        button.setOnClickListener({
+        button.setOnClickListener {
             if(button.text.toString() == resources.getString(R.string.apagar_foco)){
                 mPresenter.cambiarEstado("focoUno",false)
             }else{
                 mPresenter.cambiarEstado("focoUno",true)
             }
-        })
+        }
 
     }
 
@@ -47,6 +50,5 @@ class MainActivity : BaseActivity() ,MainPresenter.View{
     override fun showButtonText(text: String) {
         button.text = text
     }
-
 
 }
