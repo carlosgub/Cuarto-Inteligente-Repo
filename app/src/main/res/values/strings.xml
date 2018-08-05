@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Cuarto Inteligente</string>
+    <string name="apagar_foco">Apagar Foco</string>
+    <string name="prender_foco">Prender Foco</string>
 </resources>

@@ -1,6 +1,7 @@
 package room.inteligent.things.android.cuartointeligente.data.sources.firebase
 
 import com.androidhuman.rxfirebase2.database.dataChanges
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.FirebaseDatabase
 import io.reactivex.Observable
@@ -14,7 +15,11 @@ class FocoSourceFirebase @Inject constructor(private val firebaseDatabase: Fireb
 
     fun getEstados() : Observable<DataSnapshot> {
         val ref = firebaseDatabase.reference
-        return ref.dataChanges()
+        return RxFirebaseDatabase.observableSingleValueEvent(ref)
+    }
+
+    fun CambiarEstado(child: String,estado:Boolean)  {
+        firebaseDatabase.reference.child(child).setValue(estado)
     }
 
 

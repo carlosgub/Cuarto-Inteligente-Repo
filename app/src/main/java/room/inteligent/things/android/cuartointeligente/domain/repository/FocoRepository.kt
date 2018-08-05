@@ -9,4 +9,5 @@ import room.inteligent.things.android.cuartointeligente.domain.model.Foco
  */
 interface FocoRepository {
     fun getEstados(): Observable<Foco>
+    fun CambiarEstado(child:String, estado: Boolean)
 }

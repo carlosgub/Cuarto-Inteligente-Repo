@@ -15,11 +15,15 @@ class MainActivity : BaseActivity() ,MainPresenter.View{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        mPresenter.context(this)
         mPresenter.obtenerEstado()
 
         button.setOnClickListener({
-
+            if(button.text.toString() == resources.getString(R.string.apagar_foco)){
+                mPresenter.cambiarEstado("focoUno",false)
+            }else{
+                mPresenter.cambiarEstado("focoUno",true)
+            }
         })
 
     }
