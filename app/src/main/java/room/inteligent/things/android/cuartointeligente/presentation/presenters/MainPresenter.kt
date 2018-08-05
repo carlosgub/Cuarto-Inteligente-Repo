@@ -41,6 +41,7 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
         }else{
             view.showButtonText(mContext.getString(R.string.prender_foco))
         }
+        view.hideProgress()
     }
 
     interface View {
@@ -48,8 +49,6 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
         fun showProgress()
 
         fun hideProgress()
-
-        fun showMessage(title: String, message: String)
 
         fun showButtonText(text:String)
     }

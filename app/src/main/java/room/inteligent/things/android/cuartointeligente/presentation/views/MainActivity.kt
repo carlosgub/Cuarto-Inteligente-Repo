@@ -1,11 +1,14 @@
 package room.inteligent.things.android.cuartointeligente.presentation.views
 
 import android.os.Bundle
+import android.view.View
+import android.view.WindowManager
 import kotlinx.android.synthetic.main.activity_main.*
 import room.inteligent.things.android.cuartointeligente.R
 import room.inteligent.things.android.cuartointeligente.presentation.BaseActivity
 import room.inteligent.things.android.cuartointeligente.presentation.presenters.MainPresenter
 import javax.inject.Inject
+
 
 class MainActivity : BaseActivity() ,MainPresenter.View{
 
@@ -31,12 +34,14 @@ class MainActivity : BaseActivity() ,MainPresenter.View{
     override val layout: Int get() = R.layout.activity_main
 
     override fun showProgress() {
+        progressBar.visibility = View.VISIBLE
+        window.setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
+                WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
     }
 
     override fun hideProgress() {
-    }
-
-    override fun showMessage(title: String, message: String) {
+        progressBar.visibility = View.GONE
+        window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
     }
 
     override fun showButtonText(text: String) {
