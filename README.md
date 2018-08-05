@@ -1,2 +1,2 @@
 Cuarto Inteligente Repo
-[](prueba_app.gif)
+![](prueba_app.gif)
