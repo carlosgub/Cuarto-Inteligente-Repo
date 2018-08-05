@@ -21,3 +21,4 @@ Se uso el Relay para que funcione como un interruptor de la electicidad.
 ---
  * Dagger2 [2.11] - http://google.github.io/dagger
  * RxFirebase [11.0.4.0] - https://github.com/kunny/RxFirebase
+ * AndroidThings [1.0] - https://developer.android.com/things/versions/releases (Solo en el branch Things)
