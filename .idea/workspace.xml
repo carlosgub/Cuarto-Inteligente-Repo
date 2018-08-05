@@ -14,7 +14,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af5c798b-bd7e-47bb-8ac4-1c7972bf3134" name="Default" comment="" />
+    <list default="true" id="af5c798b-bd7e-47bb-8ac4-1c7972bf3134" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cuarto Inteligente Repo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cuarto Inteligente Repo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/data/repository/FocoDataRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/data/repository/FocoDataRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/data/sources/firebase/FocoSourceFirebase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/data/sources/firebase/FocoSourceFirebase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/domain/repository/FocoRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/domain/repository/FocoRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/domain/usecases/GetFocoUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/domain/usecases/GetFocoUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/presentation/presenters/MainPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/presentation/presenters/MainPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/presentation/views/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/room/inteligent/things/android/cuartointeligente/presentation/views/MainActivity.kt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2396,7 +2410,7 @@
       <window_info id="Build Variants" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.32948583" />
       <window_info anchor="bottom" id="Logcat" weight="0.32948583" />
