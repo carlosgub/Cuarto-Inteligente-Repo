@@ -13,6 +13,14 @@ Se uso el Relay para que funcione como un interruptor de la electicidad.
 * El branch master solo tiene una aplicacion base para el celular usando la arquitectura MVP.
 * El branch things es la misma aplicacion movil, ya que el kit viene con una pantalla y se puede mostrar la aplicacion en esta pantalla, pero ademas tiene la logica para que relay prenda y apague el relay.
 
+# Arquitectura del Proyecto
+---
+ ![alt text](https://i.imgur.com/BNJRf13.png)
+ 
+# Cableado
+---
+ ![alt text](https://i.imgur.com/5R73nSx.png)
+
 ## Kotlin
 ---
  * Kotlin [1.2.50] - http://kotlinlang.org
@@ -23,3 +31,4 @@ Se uso el Relay para que funcione como un interruptor de la electicidad.
  * RxFirebase [11.0.4.0] - https://github.com/kunny/RxFirebase
  * RxJava2 [2.1.0] - https://github.com/ReactiveX/RxJava
  * AndroidThings [1.0] - https://developer.android.com/things/versions/releases (Solo en el branch Things)
+ 
