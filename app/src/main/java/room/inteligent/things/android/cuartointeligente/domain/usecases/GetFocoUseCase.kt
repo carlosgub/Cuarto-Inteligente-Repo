@@ -6,8 +6,8 @@ import room.inteligent.things.android.cuartointeligente.domain.repository.FocoRe
 import javax.inject.Inject
 
 /**
- * Carlos Ugaz
- * Created by CarlosU on 8/5/18.
+ * Cuarto Inteligente
+ * Creado por Carlos Ugaz on 8/4/18.
  */
 class GetFocoUseCase @Inject constructor(private val rep: FocoRepository) {
 

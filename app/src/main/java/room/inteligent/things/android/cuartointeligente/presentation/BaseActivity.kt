@@ -3,7 +3,10 @@ package room.inteligent.things.android.cuartointeligente.presentation
 import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
 
-
+/**
+ * Cuarto Inteligente
+ * Creado por Carlos Ugaz on 8/4/18.
+ */
 abstract class BaseActivity : DaggerAppCompatActivity() {
 
     /**

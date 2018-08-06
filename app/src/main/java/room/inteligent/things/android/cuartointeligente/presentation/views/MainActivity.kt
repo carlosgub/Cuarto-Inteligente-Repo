@@ -9,7 +9,10 @@ import room.inteligent.things.android.cuartointeligente.presentation.BaseActivit
 import room.inteligent.things.android.cuartointeligente.presentation.presenters.MainPresenter
 import javax.inject.Inject
 
-
+/**
+ * Cuarto Inteligente
+ * Creado por Carlos Ugaz on 8/4/18.
+ */
 class MainActivity : BaseActivity() ,MainPresenter.View{
 
 

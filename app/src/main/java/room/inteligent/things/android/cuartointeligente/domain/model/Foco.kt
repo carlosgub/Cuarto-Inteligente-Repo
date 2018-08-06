@@ -1,7 +1,7 @@
 package room.inteligent.things.android.cuartointeligente.domain.model
 
 /**
- * CorrePalabras
- * Created by ITLAB on 8/5/18.
+ * Cuarto Inteligente
+ * Creado por Carlos Ugaz on 8/4/18.
  */
 class Foco (var focoUno:Boolean = false)
