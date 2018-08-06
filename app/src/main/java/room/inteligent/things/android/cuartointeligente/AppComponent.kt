@@ -9,7 +9,10 @@ import room.inteligent.things.android.cuartointeligente.data.sources.FirebaseMod
 import room.inteligent.things.android.cuartointeligente.presentation.BindingModule
 import room.inteligent.things.android.cuartointeligente.presentation.BuildersModule
 
-
+/**
+ * Cuarto Inteligente
+ * Creado por Carlos Ugaz on 8/4/18.
+ */
 @Component(modules = arrayOf(
         AppModule::class,
         BuildersModule::class,

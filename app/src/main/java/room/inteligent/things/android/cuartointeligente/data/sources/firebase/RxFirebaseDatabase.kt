@@ -6,6 +6,10 @@ import com.google.firebase.database.Query
 import com.google.firebase.database.ValueEventListener
 import io.reactivex.Observable
 
+/**
+ * Cuarto Inteligente
+ * Creado por Carlos Ugaz on 8/4/18.
+ */
 object RxFirebaseDatabase {
 
     fun observableSingleValueEvent(query: Query): Observable<DataSnapshot> {

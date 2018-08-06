@@ -5,8 +5,8 @@ import dagger.Module
 import dagger.Provides
 
 /**
- * @author Kevin Salazar
- * @link kevicsalazar.com
+ * Cuarto Inteligente
+ * Creado por Carlos Ugaz on 8/4/18.
  */
 @Module
 class AppModule {

@@ -6,8 +6,8 @@ import room.inteligent.things.android.cuartointeligente.data.repository.FocoData
 import room.inteligent.things.android.cuartointeligente.domain.repository.FocoRepository
 
 /**
- * CorrePalabras
- * Created by ITLAB on 8/5/18.
+ * Cuarto Inteligente
+ * Creado por Carlos Ugaz on 8/4/18.
  */
 @Module
 abstract class DataModule {
