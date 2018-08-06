@@ -34,3 +34,5 @@ captures/
 app/google-services\.json
 
 \.idea/libraries/
+
+\.idea/workspace\.xml
