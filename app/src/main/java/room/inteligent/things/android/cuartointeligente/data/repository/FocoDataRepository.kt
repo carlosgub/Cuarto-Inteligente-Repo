@@ -19,13 +19,6 @@ class FocoDataRepository @Inject constructor(private val source: FocoSourceFireb
         }
     }
 
-    override fun estadosListener(): Observable<Foco> {
-        return source.estadosListener().map {
-            var focoUno = it.child("focoUno").getValue(Boolean::class.java)?:false
-            Foco(focoUno)
-        }
-    }
-
     override fun CambiarEstado(child:String, estado: Boolean) {
         return source.CambiarEstado(child,estado)
     }

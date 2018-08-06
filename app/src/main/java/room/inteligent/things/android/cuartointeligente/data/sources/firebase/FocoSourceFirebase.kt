@@ -15,11 +15,6 @@ class FocoSourceFirebase @Inject constructor(private val firebaseDatabase: Fireb
 
     fun getEstados() : Observable<DataSnapshot> {
         val ref = firebaseDatabase.reference
-        return RxFirebaseDatabase.observableSingleValueEvent(ref)
-    }
-
-    fun estadosListener() : Observable<DataSnapshot> {
-        val ref = firebaseDatabase.reference
         return ref.dataChanges()
     }
 

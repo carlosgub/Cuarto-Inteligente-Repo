@@ -34,7 +34,6 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
                         view.showButtonText(mContext.getString(R.string.prender_foco))
                     }
                     relay.setValue(it.focoUno)
-                    estadosListener()
                     view.hideProgress()
                 })
     }
@@ -55,14 +54,6 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
             view.showButtonText(mContext.getString(R.string.prender_foco))
         }
         view.hideProgress()
-    }
-
-    fun estadosListener(){
-        useCase.estadosListener()
-                .subscribeOn(Schedulers.io())
-                .subscribe({
-                    relay.setValue(it.focoUno)
-                })
     }
 
     interface View {

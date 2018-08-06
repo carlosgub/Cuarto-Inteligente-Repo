@@ -15,10 +15,6 @@ class GetFocoUseCase @Inject constructor(private val rep: FocoRepository) {
         return rep.getEstados()
     }
 
-    fun estadosListener() : Observable<Foco>{
-        return rep.estadosListener()
-    }
-
     fun cambiarEstado(child:String, estado:Boolean) {
         return rep.CambiarEstado(child,estado)
     }
