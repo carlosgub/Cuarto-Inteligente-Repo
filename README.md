@@ -8,7 +8,7 @@ Se uso el Relay para que funcione como un interruptor de la electicidad.
 
 ![](prueba_app.gif)
 
-# Compilación del Repo
+# Compilación de la Repo
 * Agregar el archivo google-services.json de su proyecto de Firebase.
 
 # Branch
