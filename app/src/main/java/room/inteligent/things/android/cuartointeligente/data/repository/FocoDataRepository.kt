@@ -22,7 +22,4 @@ class FocoDataRepository @Inject constructor(private val source: FocoSourceFireb
     override fun CambiarEstado(child:String, estado: Boolean) {
         return source.CambiarEstado(child,estado)
     }
-
-
-
 }

@@ -21,6 +21,4 @@ class FocoSourceFirebase @Inject constructor(private val firebaseDatabase: Fireb
     fun CambiarEstado(child: String,estado:Boolean)  {
         firebaseDatabase.reference.child(child).setValue(estado)
     }
-
-
 }
