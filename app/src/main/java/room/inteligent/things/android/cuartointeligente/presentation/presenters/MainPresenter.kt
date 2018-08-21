@@ -29,9 +29,9 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
                 .subscribeOn(Schedulers.io())
                 .subscribe({
                     if(it.focoUno){
-                        view.showButtonText(mContext.getString(R.string.apagar_foco))
+                        view.setButtonText(mContext.getString(R.string.apagar_foco))
                     }else{
-                        view.showButtonText(mContext.getString(R.string.prender_foco))
+                        view.setButtonText(mContext.getString(R.string.prender_foco))
                     }
                     relay.setValue(it.focoUno)
                     view.hideProgress()
@@ -49,9 +49,9 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
         view.showProgress()
         useCase.cambiarEstado(child,estado)
         if(estado){
-            view.showButtonText(mContext.getString(R.string.apagar_foco))
+            view.setButtonText(mContext.getString(R.string.apagar_foco))
         }else{
-            view.showButtonText(mContext.getString(R.string.prender_foco))
+            view.setButtonText(mContext.getString(R.string.prender_foco))
         }
         view.hideProgress()
     }
@@ -62,7 +62,7 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
 
         fun hideProgress()
 
-        fun showButtonText(text:String)
+        fun setButtonText(text:String)
     }
 
 }

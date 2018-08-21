@@ -19,7 +19,6 @@ class MainActivity : BaseActivity() ,MainPresenter.View{
 
 
     @Inject lateinit var mPresenter: MainPresenter
-    private lateinit var relay:Gpio
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +49,7 @@ class MainActivity : BaseActivity() ,MainPresenter.View{
         window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
     }
 
-    override fun showButtonText(text: String) {
+    override fun setButtonText(text: String) {
         button.text = text
     }
 
