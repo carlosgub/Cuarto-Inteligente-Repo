@@ -1,4 +1,4 @@
-# Cuarto Inteligente Repo
+# Cuarto Inteligente Repo <a href="https://codeclimate.com/github/carlosgub/Cuarto-Inteligente-Repo"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 Este es un ejemplo del uso del Developer Kit de Android Things
 
 Este ejemplo es para apagar y prender un foco mediante el uso de un Relay y Firebase.
