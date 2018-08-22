@@ -38,3 +38,7 @@ app/google-services\.json
 \.idea/caches/build_file_checksums\.ser
 
 \.idea/codeStyles/Project\.xml
+
+\.idea/workspace\.xml
+
+app/app\.iml
