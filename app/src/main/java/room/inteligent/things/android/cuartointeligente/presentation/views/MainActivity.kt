@@ -22,10 +22,9 @@ class MainActivity : BaseActivity() ,MainPresenter.View{
         super.onCreate(savedInstanceState)
         mPresenter.context(this)
         mPresenter.getState()
-        mPresenter.initializeRelay()
 
         button.setOnClickListener {
-            if(button.text.toString() == resources.getString(R.string.apagar_foco)){
+            if(button.text.toString() == resources.getString(R.string.turn_off_light)){
                 mPresenter.changeState("light",false)
             }else{
                 mPresenter.changeState("light",true)

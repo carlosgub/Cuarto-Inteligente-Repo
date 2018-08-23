@@ -1,8 +1,6 @@
 package room.inteligent.things.android.cuartointeligente.presentation.presenters
 
 import android.content.Context
-import com.google.android.things.pio.Gpio
-import com.google.android.things.pio.PeripheralManager
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import room.inteligent.things.android.cuartointeligente.R
@@ -17,7 +15,6 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
                                         private val useCase: GetFocoUseCase){
 
     lateinit var mContext:Context
-    lateinit var relay:Gpio
     private val pin_name = "GPIO2_IO01" // I/O PIN OF PICO-i.MX7D 
     private var cd = CompositeDisposable()
 
@@ -34,21 +31,12 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
                 .subscribe {
 
                     if(it.light){
-                        view.setButtonText(mContext.getString(R.string.apagar_foco))
+                        view.setButtonText(mContext.getString(R.string.turn_off_light))
                     }else{
-                        view.setButtonText(mContext.getString(R.string.prender_foco))
+                        view.setButtonText(mContext.getString(R.string.turn_on_light))
                     }
-                    relay.value = it.light
                     view.hideProgress()
                 })
-    }
-
-    /** Initialize the Relay*/
-    fun initializeRelay(){
-        val manager = PeripheralManager.getInstance()
-        relay = manager.openGpio(pin_name)
-        relay.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW)
-        relay.value = false
     }
 
     /** Change the state of the light */
@@ -56,9 +44,9 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
         view.showProgress()
         useCase.changeState(child,state)
         if(state){
-            view.setButtonText(mContext.getString(R.string.apagar_foco))
+            view.setButtonText(mContext.getString(R.string.turn_off_light))
         }else{
-            view.setButtonText(mContext.getString(R.string.prender_foco))
+            view.setButtonText(mContext.getString(R.string.turn_on_light))
         }
         view.hideProgress()
     }

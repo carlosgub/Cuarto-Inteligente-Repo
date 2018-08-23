@@ -4,7 +4,6 @@
     package="room.inteligent.things.android.cuartointeligente">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.google.android.things.permission.USE_PERIPHERAL_IO" />
 
     <application
         android:name=".App"
@@ -15,13 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <uses-library android:name="com.google.android.things" />
-        <activity android:name=".presentation.views.MainActivity"
-            android:screenOrientation="landscape">
+        <activity android:name=".presentation.views.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.IOT_LAUNCHER"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
