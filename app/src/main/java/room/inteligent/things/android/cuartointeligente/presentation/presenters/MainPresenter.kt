@@ -18,7 +18,7 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
 
     lateinit var mContext:Context
     lateinit var relay:Gpio
-    private val pin_name = "GPIO2_IO01"
+    private val pin_name = "GPIO2_IO01" // I/O PIN OF PICO-i.MX7D 
     private var cd = CompositeDisposable()
 
     /** Get the context of the Activity */
