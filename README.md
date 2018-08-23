@@ -1,36 +1,40 @@
 # Cuarto Inteligente Repo
-Este es un ejemplo del uso del Developer Kit de Android Things
+Hi, this is an example of Android things using the Developer Kit delivered on Google I/O 18
 
-Este ejemplo es para apagar y prender un foco mediante el uso de un Relay y Firebase.
+This example shows how turn on/off a light by using a Relay and Firebase.
 
-Se uso Firebase para guardar el estado del foco
-Se uso el Relay para que funcione como un interruptor de la electicidad.
+Firebase was used for save and get the state of the light.
+Relay was used like an interrupter of the light.
 
 ![](prueba_app.gif)
 
-# Pasos para poder compilar la repo
-* Agregar el archivo google-services.json de su proyecto de Firebase.
-* Compilar.
+# Steps to compile the repository
+* Add this project on your Firebase console
+* Download the google.servicess.json file
+* Add the file into the project.
+* Compile.
 
 # Branch
 
-* El branch master solo tiene una aplicacion base para el celular usando la arquitectura MVP.
-* El branch things es la misma aplicacion movil, ya que el kit viene con una pantalla y se puede mostrar la aplicacion en esta pantalla, pero ademas tiene la logica para que relay prenda y apague el relay.
+* The master branch only have a base android mobile app who uses the pattern MVP with comments on spanish.
+* The master-english is the master branch but with comments on english.
+* The things branch is the same android mobile app, because the developer kit have an display and the app can be displayed on this screen, but also have the logic for relay to turn on and off the relay but the comments are on spanish.
+* The things-english branch is the things branch but with comments on english.
 
-# Arquitectura del Proyecto
+# Project Architecture
  ![alt text](https://i.imgur.com/BNJRf13.png)
  
-# Cableado
+# Wiring Design
  ![alt text](https://i.imgur.com/5R73nSx.png)
 
 ## Kotlin
 ---
- * Kotlin [1.2.50] - http://kotlinlang.org
+ * Kotlin [1.2.51] - http://kotlinlang.org
  
  ## Libraries
 ---
- * Dagger2 [2.11] - http://google.github.io/dagger
+ * Dagger2 [2.15] - http://google.github.io/dagger
  * RxFirebase [11.0.4.0] - https://github.com/kunny/RxFirebase
- * RxJava2 [2.1.0] - https://github.com/ReactiveX/RxJava
+ * RxAndroid [2.0.1] - https://github.com/ReactiveX/RxJava
+ * RxKotlin [2.0.3] - https://github.com/ReactiveX/RxJava
  * AndroidThings [1.0] - https://developer.android.com/things/versions/releases (Solo en el branch Things)
- 
