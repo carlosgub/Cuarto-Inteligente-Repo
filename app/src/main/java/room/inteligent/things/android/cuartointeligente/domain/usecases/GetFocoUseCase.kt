@@ -1,22 +1,24 @@
 package room.inteligent.things.android.cuartointeligente.domain.usecases
 
 import io.reactivex.Observable
-import room.inteligent.things.android.cuartointeligente.domain.model.Foco
-import room.inteligent.things.android.cuartointeligente.domain.repository.FocoRepository
+import room.inteligent.things.android.cuartointeligente.domain.model.Light
+import room.inteligent.things.android.cuartointeligente.domain.repository.LightRepository
 import javax.inject.Inject
 
 /**
  * Cuarto Inteligente
  * Creado por Carlos Ugaz on 8/4/18.
  */
-class GetFocoUseCase @Inject constructor(private val rep: FocoRepository) {
+class GetFocoUseCase @Inject constructor(private val rep: LightRepository) {
 
-    fun getEstados() : Observable<Foco>{
-        return rep.getEstados()
+    /** Get the current state of the light */
+    fun getState() : Observable<Light>{
+        return rep.getState()
     }
 
-    fun cambiarEstado(child:String, estado:Boolean) {
-        return rep.CambiarEstado(child,estado)
+    /** Change the state of the light */
+    fun changeState(child:String, estado:Boolean) {
+        return rep.changeState(child,estado)
     }
 
 }

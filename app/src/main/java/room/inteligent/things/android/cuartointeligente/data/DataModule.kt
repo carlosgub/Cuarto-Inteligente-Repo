@@ -2,8 +2,8 @@ package room.inteligent.things.android.cuartointeligente.data
 
 import dagger.Binds
 import dagger.Module
-import room.inteligent.things.android.cuartointeligente.data.repository.FocoDataRepository
-import room.inteligent.things.android.cuartointeligente.domain.repository.FocoRepository
+import room.inteligent.things.android.cuartointeligente.data.repository.LightDataRepository
+import room.inteligent.things.android.cuartointeligente.domain.repository.LightRepository
 
 /**
  * Cuarto Inteligente
@@ -12,5 +12,5 @@ import room.inteligent.things.android.cuartointeligente.domain.repository.FocoRe
 @Module
 abstract class DataModule {
 
-    @Binds abstract fun bindHistoryRepository(repository: FocoDataRepository): FocoRepository
+    @Binds abstract fun bindHistoryRepository(repository: LightDataRepository): LightRepository
 }

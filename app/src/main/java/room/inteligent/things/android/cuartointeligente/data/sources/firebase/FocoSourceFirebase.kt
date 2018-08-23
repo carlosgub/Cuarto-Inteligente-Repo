@@ -13,12 +13,14 @@ import javax.inject.Inject
  */
 class FocoSourceFirebase @Inject constructor(private val firebaseDatabase: FirebaseDatabase) {
 
-    fun getEstados() : Observable<DataSnapshot> {
+    /** Get the current state of the light */
+    fun getState() : Observable<DataSnapshot> {
         val ref = firebaseDatabase.reference
         return ref.dataChanges()
     }
 
-    fun CambiarEstado(child: String,estado:Boolean)  {
+    /** Change the state of the light */
+    fun changeState(child: String,estado:Boolean)  {
         firebaseDatabase.reference.child(child).setValue(estado)
     }
 }
