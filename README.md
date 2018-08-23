@@ -21,7 +21,7 @@ Se uso el Relay para que funcione como un interruptor de la electicidad.
 * El branch master solo tiene una aplicacion base para el celular usando el patron MVP.
 * El branch master-english es el branch master pero con comentarios en ingles.
 * El branch things es la misma aplicacion movil, ya que el kit viene con una pantalla y se puede mostrar la aplicacion en esta pantalla, pero ademas tiene la logica para que relay prenda y apague el relay.
-* El branch things-english es el branch things pero en ingles
+* El branch things-english es el branch things pero con comentarios en ingles.
 
 # Arquitectura del Proyecto
  ![alt text](https://i.imgur.com/BNJRf13.png)
