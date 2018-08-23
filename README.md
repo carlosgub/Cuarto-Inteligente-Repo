@@ -1,9 +1,8 @@
 # Cuarto Inteligente Repo <a href="https://codeclimate.com/github/carlosgub/Cuarto-Inteligente-Repo"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-IF YOU WANT THE ENGLISH README VERSION GO TO THE BRANCH MASTER-ENGLISH
+IF YOU WANT THE ENGLISH README VERSION GO TO THE BRANCH MASTER-ENGLISH/THINGS-ENGLISH
 
 Este es un ejemplo del uso del Developer Kit de Android Things
-
 
 Este ejemplo es para apagar y prender un foco mediante el uso de un Relay y Firebase.
 
@@ -13,7 +12,9 @@ Se uso el Relay para que funcione como un interruptor de la electicidad.
 ![](prueba_app.gif)
 
 # Pasos para poder compilar la repo
-* Agregar el archivo google-services.json de su proyecto de Firebase.
+* Agregar el projecto en su projecto de Firebase.
+* Descargar el archivo google-services.json.
+* Agregar el archivo al proyecto.
 * Compilar.
 
 # Branch
@@ -31,12 +32,13 @@ Se uso el Relay para que funcione como un interruptor de la electicidad.
 
 ## Kotlin
 ---
- * Kotlin [1.2.50] - http://kotlinlang.org
+ * Kotlin [1.2.51] - http://kotlinlang.org
  
  ## Libraries
 ---
- * Dagger2 [2.11] - http://google.github.io/dagger
+ * Dagger2 [2.15] - http://google.github.io/dagger
  * RxFirebase [11.0.4.0] - https://github.com/kunny/RxFirebase
- * RxJava2 [2.1.0] - https://github.com/ReactiveX/RxJava
+ * RxAndroid [2.0.1] - https://github.com/ReactiveX/RxJava
+ * RxKotlin [2.0.3] - https://github.com/ReactiveX/RxJava
  * AndroidThings [1.0] - https://developer.android.com/things/versions/releases (Solo en el branch Things)
  
