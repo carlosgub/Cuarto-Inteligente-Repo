@@ -12,14 +12,14 @@ import javax.inject.Inject
  */
 class FocoSourceFirebase @Inject constructor(private val firebaseDatabase: FirebaseDatabase) {
 
+    /** Obtener el estado actual del foco*/
     fun getEstados() : Observable<DataSnapshot> {
         val ref = firebaseDatabase.reference
         return ref.dataChanges()
     }
 
-    fun CambiarEstado(child: String,estado:Boolean)  {
+    /** Cambiar el estado del boton */
+    fun cambiarEstado(child: String,estado:Boolean)  {
         firebaseDatabase.reference.child(child).setValue(estado)
     }
-
-
 }

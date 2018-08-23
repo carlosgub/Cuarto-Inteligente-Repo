@@ -12,17 +12,16 @@ import javax.inject.Inject
  */
 class FocoDataRepository @Inject constructor(private val source: FocoSourceFirebase) : FocoRepository {
 
-    override fun getEstados(): Observable<Foco> {
+    /** Obtener el estado actual del foco*/
+    override fun getEstado(): Observable<Foco> {
         return source.getEstados().map {
-            var focoUno = it.child("focoUno").getValue(Boolean::class.java)?:false
-            Foco(focoUno)
+            val foco = it.child("focoUno").getValue(Boolean::class.java)?:false
+            Foco(foco)
         }
     }
 
-    override fun CambiarEstado(child:String, estado: Boolean) {
-        return source.CambiarEstado(child,estado)
+    /** Cambiar el estado del boton */
+    override fun cambiarEstado(child:String, estado: Boolean) {
+        return source.cambiarEstado(child,estado)
     }
-
-
-
 }

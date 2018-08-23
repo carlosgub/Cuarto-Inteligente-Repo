@@ -18,38 +18,49 @@ class MainActivity : BaseActivity() ,MainPresenter.View{
 
     @Inject lateinit var mPresenter: MainPresenter
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mPresenter.context(this)
         mPresenter.obtenerEstado()
 
-        button.setOnClickListener({
+        button.setOnClickListener {
             if(button.text.toString() == resources.getString(R.string.apagar_foco)){
                 mPresenter.cambiarEstado("focoUno",false)
             }else{
                 mPresenter.cambiarEstado("focoUno",true)
             }
-        })
+        }
 
     }
 
     override val layout: Int get() = R.layout.activity_main
 
+    /** Mostrar el progress*/
     override fun showProgress() {
         progressBar.visibility = View.VISIBLE
+
+        /** Bloquear la pantalla para que no pueda presionar el boton*/
         window.setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
                 WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
     }
 
+    /** Ocultar el progress*/
     override fun hideProgress() {
         progressBar.visibility = View.GONE
+
+        /** Desbloquear la pantalla*/
         window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
     }
 
-    override fun showButtonText(text: String) {
+    /** Cambiar el boton del texto*/
+    override fun setButtonText(text: String) {
         button.text = text
     }
 
+    /** Limpiar los observables*/
+    override fun onDestroy() {
+        super.onDestroy()
+        mPresenter.onDestroy()
+    }
 
 }
