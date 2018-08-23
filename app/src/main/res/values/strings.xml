@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cuarto Inteligente</string>
-    <string name="apagar_foco">Apagar Foco</string>
-    <string name="prender_foco">Prender Foco</string>
+    <string name="app_name">Smart Room</string>
+    <string name="turn_off_light">Turn off the light</string>
+    <string name="turn_on_light">Turn on the light</string>
 </resources>

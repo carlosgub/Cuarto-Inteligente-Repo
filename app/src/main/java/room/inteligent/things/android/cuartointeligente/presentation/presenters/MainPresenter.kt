@@ -34,9 +34,9 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
                 .subscribe {
 
                     if(it.light){
-                        view.setButtonText(mContext.getString(R.string.apagar_foco))
+                        view.setButtonText(mContext.getString(R.string.turn_off_light))
                     }else{
-                        view.setButtonText(mContext.getString(R.string.prender_foco))
+                        view.setButtonText(mContext.getString(R.string.turn_on_light))
                     }
                     relay.value = it.light
                     view.hideProgress()
@@ -56,9 +56,9 @@ class MainPresenter @Inject constructor(var view: MainPresenter.View,
         view.showProgress()
         useCase.changeState(child,state)
         if(state){
-            view.setButtonText(mContext.getString(R.string.apagar_foco))
+            view.setButtonText(mContext.getString(R.string.turn_off_light))
         }else{
-            view.setButtonText(mContext.getString(R.string.prender_foco))
+            view.setButtonText(mContext.getString(R.string.turn_on_light))
         }
         view.hideProgress()
     }
