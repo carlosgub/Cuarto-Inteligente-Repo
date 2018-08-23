@@ -13,7 +13,6 @@ class FirebaseModule {
 
     @Provides
     fun provideFirebaseDatabase(): FirebaseDatabase {
-        val firebaseDatabase = FirebaseDatabase.getInstance()
-        return firebaseDatabase
+        return FirebaseDatabase.getInstance()
     }
 }

@@ -11,12 +11,14 @@ import javax.inject.Inject
  */
 class GetFocoUseCase @Inject constructor(private val rep: FocoRepository) {
 
-    fun getEstados() : Observable<Foco>{
-        return rep.getEstados()
+    /** Obtener el estado actual del foco*/
+    fun getEstado() : Observable<Foco>{
+        return rep.getEstado()
     }
 
+    /** Cambiar el estado del boton */
     fun cambiarEstado(child:String, estado:Boolean) {
-        return rep.CambiarEstado(child,estado)
+        return rep.cambiarEstado(child,estado)
     }
 
 }

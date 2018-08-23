@@ -8,6 +8,6 @@ import room.inteligent.things.android.cuartointeligente.domain.model.Foco
  * Creado por Carlos Ugaz on 8/4/18.
  */
 interface FocoRepository {
-    fun getEstados(): Observable<Foco>
-    fun CambiarEstado(child:String, estado: Boolean)
+    fun getEstado(): Observable<Foco> /** Obtener el estado actual del foco*/
+    fun cambiarEstado(child:String, estado: Boolean) /** Cambiar el estado del boton */
 }
