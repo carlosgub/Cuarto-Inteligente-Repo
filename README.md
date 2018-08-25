@@ -7,6 +7,7 @@ Este es un ejemplo del uso del Developer Kit de Android Things
 Este ejemplo es para apagar y prender un foco mediante el uso de un Relay y Firebase.
 
 Se uso Firebase para guardar el estado del foco
+
 Se uso el Relay para que funcione como un interruptor de la electicidad.
 
 ![](prueba_app.gif)
