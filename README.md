@@ -2,7 +2,7 @@
 
 IF YOU WANT THE ENGLISH README VERSION GO TO THE BRANCH MASTER-ENGLISH/THINGS-ENGLISH
 
-Este es un ejemplo del uso del Developer Kit de Android Things
+Este es un ejemplo del uso del Developer Kit de Android Things, presentado en Google I/O Extended 18 Lima.
 
 Este ejemplo es para apagar y prender un foco mediante el uso de un Relay y Firebase.
 
